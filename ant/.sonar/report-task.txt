@@ -1,0 +1,6 @@
+projectKey=my:ant_pro
+serverUrl=http://localhost:9000
+serverVersion=6.4.0.25310
+dashboardUrl=http://localhost:9000/dashboard/index/my:ant_pro
+ceTaskId=AWPtNGKVIZEJzW9S-Klt
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWPtNGKVIZEJzW9S-Klt
