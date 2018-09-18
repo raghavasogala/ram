@@ -1,0 +1,26 @@
+def workspace;
+node {
+   stage('checkout')
+   {
+       checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '1ef7f4a7-0204-4aef-977e-52610e1ee475', url: 'https://github.com/raghavasogala/ram.git']]])
+       workspace =pwd()
+       
+   }
+   stage('static code analysis')
+   {
+       echo "analysis the code"
+   }
+   
+   stage('build')
+   {
+       echo "build the code"
+   }
+   stage('unit testing')
+   {
+       echo "testing code"
+   }
+   stage('delivery')
+   {
+       echo "deliver the code"
+   }
+}
